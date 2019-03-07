@@ -12,7 +12,7 @@
 
     - compile (already compiled): javac DisplayingThreeCards.java
     
-    - run: java DisplayThreeCards
+    - run: java DisplayingThreeCards
     
 ## Question 2
 
