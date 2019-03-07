@@ -45,6 +45,7 @@ public class Histogram extends Application {
 
         // View Button
         Button view_btn = new Button("View");
+        view_btn.setPrefWidth(50);
         view_btn.setDefaultButton(true);            // links it to enter-pressed action
         view_btn.setOnAction(e -> {
             // Try opening file
@@ -117,6 +118,7 @@ public class Histogram extends Application {
                 System.out.println("File cannot be read, verify your path");
             }
 
+            //primaryStage.setHeight(350);
 
         });
 
