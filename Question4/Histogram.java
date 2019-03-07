@@ -40,11 +40,12 @@ public class Histogram extends Application {
 
         // Label + TextField creation
         Label file_lbl = new Label("Filename");
-        TextField path = new TextField("Enter File");
+        TextField path = new TextField("Enter full pathname...");
         path.setPrefWidth(345);
 
         // View Button
         Button view_btn = new Button("View");
+        view_btn.setDefaultButton(true);            // links it to enter-pressed action
         view_btn.setOnAction(e -> {
             // Try opening file
             try {
@@ -116,7 +117,6 @@ public class Histogram extends Application {
                 System.out.println("File cannot be read, verify your path");
             }
 
-            //primaryStage.setHeight(350);
 
         });
 
@@ -134,8 +134,8 @@ public class Histogram extends Application {
         pane.setBottom(hbox);
 
         // Creating Stage
-        primaryStage.setTitle("Question_4");
-        primaryStage.setScene(new Scene(pane, 450, 350));
+        primaryStage.setTitle("Question 4");
+        primaryStage.setScene(new Scene(pane, 453, 350));
         primaryStage.setResizable(false);
         primaryStage.show();
     }
@@ -145,3 +145,5 @@ public class Histogram extends Application {
         launch(args);
     }
 }
+
+
